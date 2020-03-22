@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace LR2_TASK_9_
 {
     class Program
