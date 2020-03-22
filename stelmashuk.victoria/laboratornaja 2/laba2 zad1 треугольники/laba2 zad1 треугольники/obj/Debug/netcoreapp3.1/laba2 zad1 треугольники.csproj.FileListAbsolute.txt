@@ -1,0 +1,11 @@
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\bin\Debug\netcoreapp3.1\laba2 zad1 треугольники.exe
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\bin\Debug\netcoreapp3.1\laba2 zad1 треугольники.deps.json
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\bin\Debug\netcoreapp3.1\laba2 zad1 треугольники.runtimeconfig.json
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\bin\Debug\netcoreapp3.1\laba2 zad1 треугольники.runtimeconfig.dev.json
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\bin\Debug\netcoreapp3.1\laba2 zad1 треугольники.dll
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\bin\Debug\netcoreapp3.1\laba2 zad1 треугольники.pdb
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\obj\Debug\netcoreapp3.1\laba2 zad1 треугольники.csprojAssemblyReference.cache
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\obj\Debug\netcoreapp3.1\laba2 zad1 треугольники.AssemblyInfoInputs.cache
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\obj\Debug\netcoreapp3.1\laba2 zad1 треугольники.AssemblyInfo.cs
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\obj\Debug\netcoreapp3.1\laba2 zad1 треугольники.dll
+C:\Users\polivek\source\repos\laba2 zad1 треугольники\laba2 zad1 треугольники\obj\Debug\netcoreapp3.1\laba2 zad1 треугольники.pdb

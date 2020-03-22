@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "laba2 zad1 треугольники/1.0.0": {
+        "runtime": {
+          "laba2 zad1 треугольники.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "laba2 zad1 треугольники/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
