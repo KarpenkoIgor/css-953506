@@ -21,7 +21,8 @@ namespace pudge
             Console.Clear();
 
             Console.WriteLine("Enter birth year");
-            birth_year = Convert.ToInt32(Console.ReadLine());
+            int.TryParse(Console.ReadLine(), out birth_year);
+
             if (birth_year < 1900 || birth_year > 2020)
                 birth_year = 2020;
             Console.Clear();
