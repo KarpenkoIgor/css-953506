@@ -48,8 +48,7 @@ namespace _2._00
                     case 2:
                         Console.Clear();
                         Console.WriteLine("Enter a string (in Russian):");
-                        string str;
-                        str = Convert.ToString(Console.ReadLine());
+                        string str = Convert.ToString(Console.ReadLine());
                         int n = str.Length, i;
                         for (i = 0; i < n; i++)
                             if (char.IsUpper(str[i]))
