@@ -8,11 +8,9 @@ namespace labr2._3
         {
             Console.WriteLine("Здравствуйте, это программа выполняет эффективное перемешивание символов в веденной вами строке.");
             Console.WriteLine("Введите вашу строку: ");
-
             string text;
             text = Console.ReadLine();
             Console.WriteLine("Итак, строка в первоначальном виде: {0}", text);
-            
                 char[] array = text.ToCharArray();
                 Random rng = new Random();
                 int n = array.Length;
@@ -26,7 +24,6 @@ namespace labr2._3
                 }
             text = new string(array);
             Console.WriteLine("Строка после перемешивания в ней символов: {0}", text);
-
         }
     }
 }
