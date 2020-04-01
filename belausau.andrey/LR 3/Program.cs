@@ -25,12 +25,10 @@ namespace pudge
             if (birth_year < 1900 || birth_year > 2020)
                 birth_year = 2020;
             Console.Clear();
-
+            
             Human.birth_year = birth_year;
             human = new Human(name, surname, gender);
-
-            Console.Clear();
-
+            
             do
             {
                 Console.WriteLine("1 - Show info\n2 - Die\n3 - Change name\n4 - Change surname\n5 - Set disease\n6 - Shout\n7 - Change gender\n8 - Show name and surname\nq - Exit");
