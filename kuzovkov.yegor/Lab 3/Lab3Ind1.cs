@@ -12,8 +12,10 @@ namespace Lab3Ind1
             Console.Write("First of all, the transport's type: ");
             string Type = Console.ReadLine();
 
+
             Console.Write("\nNow, enter it's mark: ");
             string Mark = Console.ReadLine();
+
 
             Console.Write("\nThe year your vehicle was made: ");
             uint Year;
@@ -27,6 +29,7 @@ namespace Lab3Ind1
                     Console.WriteLine("Okay!\n");
             } while (success == false);
 
+
             Console.Write("Your transport's capacity: ");
             uint Capacity;
             do
@@ -38,6 +41,7 @@ namespace Lab3Ind1
                     Console.WriteLine("Okay!\n");
             } while (success == false);
 
+
             Console.Write("Now, the vehicle's power: ");
             uint Power;
             do
@@ -48,6 +52,7 @@ namespace Lab3Ind1
                 else
                     Console.WriteLine("Okay!\n");
             } while (success == false);
+
 
             Console.Write("And, the vehicle's maximum speed: ");
             uint Max;
@@ -61,6 +66,91 @@ namespace Lab3Ind1
             } while (success == false);
 
             Transport Vehicle = new Transport(Type, Mark, Year, Capacity, Power, Max);
+
+
+            int decision = 0;
+            int position = 0;
+            bool correct;
+            do
+            {
+                Console.Clear();
+                ShowMenu();
+
+                do
+                {
+                    correct = Int32.TryParse(Console.ReadLine(), out decision);
+                    if (!success)
+                        Console.Write("Error. Please, enter your choice once again: ");
+                    else
+                        Console.WriteLine("Okay!\n");
+
+                } while (correct == false);
+
+
+                Console.Clear();
+                switch (decision)
+                {
+                    case 1:
+                    {
+                        Vehicle.ShowInfo();
+                        Console.WriteLine($"Position: {position}\n");
+                        Console.ReadKey();
+                        break;
+                    }
+
+                    case 2:
+                    {
+                        uint amount = 0;
+                        Console.Write("How much fuel you would like to add: ");
+                        if (!UInt32.TryParse(Console.ReadLine(), out amount))
+                        {
+                            Console.WriteLine("Error.\n");
+                            break;
+                        }
+                        Vehicle.Refuel(amount);
+                        Console.ReadKey();
+                        break;
+                    }
+
+                    case 3:
+                    {
+                        int speed = 0;
+                        Console.Write("How much speed you would like to add/subtract: ");
+                        if (!Int32.TryParse(Console.ReadLine(), out speed))
+                        {
+                            Console.WriteLine("Error.\n");
+                            break;
+                        }
+                        Vehicle.currentspeed = speed;
+                        Console.ReadKey();
+                        break;
+                    }
+
+                    case 4:
+                    {
+                        int coordinate = 0;
+                        if (!Int32.TryParse(Console.ReadLine(), out coordinate))
+                        {
+                            Console.WriteLine("Error.\n");
+                            break;
+                        }
+                        position = Vehicle.Move(coordinate);
+                        Console.ReadKey();
+                        break;
+                    }
+                }
+
+            } while (decision != 5);
+        }
+
+        static void ShowMenu()
+        {
+            Console.WriteLine("You can do the following: ");
+            Console.WriteLine("1. Check the status of your vehicle.");
+            Console.WriteLine("2. Refuel your vehicle");
+            Console.WriteLine("3. Speed up or slow down.");
+            Console.WriteLine("4. Move forward or backward.");
+            Console.WriteLine("5. Exit.");
         }
     }
 }
