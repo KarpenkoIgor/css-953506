@@ -1,0 +1,11 @@
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\bin\Debug\netcoreapp3.1\LAba2.3.exe
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\bin\Debug\netcoreapp3.1\LAba2.3.deps.json
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\bin\Debug\netcoreapp3.1\LAba2.3.runtimeconfig.json
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\bin\Debug\netcoreapp3.1\LAba2.3.runtimeconfig.dev.json
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\bin\Debug\netcoreapp3.1\LAba2.3.dll
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\bin\Debug\netcoreapp3.1\LAba2.3.pdb
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\obj\Debug\netcoreapp3.1\LAba2.3.csprojAssemblyReference.cache
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\obj\Debug\netcoreapp3.1\LAba2.3.AssemblyInfoInputs.cache
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\obj\Debug\netcoreapp3.1\LAba2.3.AssemblyInfo.cs
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\obj\Debug\netcoreapp3.1\LAba2.3.dll
+C:\Users\vitya\Documents\OAiP\SEMESTR2_2_2\C#\Laboratory2\LAba2.3\obj\Debug\netcoreapp3.1\LAba2.3.pdb
