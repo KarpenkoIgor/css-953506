@@ -10,7 +10,6 @@ namespace _2._00
             bool exit = false;
             while (exit == false)
             {
-
                 Console.WriteLine("Choose the task from 1 to 3(for quit - 0):");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -27,8 +26,6 @@ namespace _2._00
                         Console.WriteLine(now.ToString("F"));
                         Console.WriteLine(now.ToString("G"));
                         Console.WriteLine("\nThe number of digits in the date entry:");
-
-
                         string nowDate = DateTime.Now.ToString();
                         int sum = 0;
                         for (char num = '0'; num <= '9'; num++)
@@ -58,8 +55,6 @@ namespace _2._00
                             if (char.IsUpper(str[i]))
                                 if (str[i] > 'A' && str[i] < 'Z') continue;
                                 else Console.Write(str[i]);
-
-
                         Console.Write("\n\nPress any key to continue.");
                         Console.ReadKey();
                         Console.Clear();
@@ -92,10 +87,8 @@ namespace _2._00
                                 Console.WriteLine("Please press any key or '4'.....");
                                 Console.ReadKey();
                                 Console.Clear(); 
-                            }
-                        
+                            }                      
                         break;
-
                 }
             }
 
