@@ -14,7 +14,6 @@ namespace ConsoleApp2
         {
            TicTacToe();                 
         }
-
         
         static void TicTacToe() 
         {
@@ -88,7 +87,6 @@ namespace ConsoleApp2
             };
         }
 
-
         static void Field()
         {
             Console.WriteLine("     |     |      ");
@@ -149,10 +147,6 @@ namespace ConsoleApp2
                 }
 
             return 2;
-
-
-        }
-
-       
+        }       
     }
 }
