@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+//вапвдопваопва
 typedef struct item {
     char *data;
     struct item *left;
