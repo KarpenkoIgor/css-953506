@@ -41,42 +41,34 @@ namespace pudge
                         human.ShowInfo();
                         Console.ReadKey();
                         break;
-
                     case '2':
                         if (human.isDead)
                             human.Resurrect();
                         else human.Die();
                         break;
-
                     case '3':
                         Console.Write("name - ");
                         human.Name = Console.ReadLine();
                         break;
-
                     case '4':
                         Console.Write("surname - ");
                         human.Surname = Console.ReadLine();
                         break;
-
                     case '5':
                         Console.Write("disease - ");
                         human.Disease = Console.ReadLine();
                         break;
-
                     case '6':
                         human.Shout();
                         break;
-
                     case '7':
                         human.ChangeGender();
                         break;
-
                     case '8':
                         Console.Clear();
                         Console.Write(human["name"] + " " + human["surname"]);
                         Console.ReadKey();
                         break;
-
                     case 'q':
                         return;
                 }
