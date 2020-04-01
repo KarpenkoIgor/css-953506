@@ -6,16 +6,13 @@ namespace Lab3Ind1
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Hello! Enter the data of your transport!\n");
 
             Console.Write("First of all, the transport's type: ");
             string Type = Console.ReadLine();
 
-
             Console.Write("\nNow, enter it's mark: ");
             string Mark = Console.ReadLine();
-
 
             Console.Write("\nThe year your vehicle was made: ");
             uint Year;
@@ -29,7 +26,6 @@ namespace Lab3Ind1
                     Console.WriteLine("Okay!\n");
             } while (success == false);
 
-
             Console.Write("Your transport's capacity: ");
             uint Capacity;
             do
@@ -41,7 +37,6 @@ namespace Lab3Ind1
                     Console.WriteLine("Okay!\n");
             } while (success == false);
 
-
             Console.Write("Now, the vehicle's power: ");
             uint Power;
             do
@@ -52,7 +47,6 @@ namespace Lab3Ind1
                 else
                     Console.WriteLine("Okay!\n");
             } while (success == false);
-
 
             Console.Write("And, the vehicle's maximum speed: ");
             uint Max;
@@ -66,7 +60,6 @@ namespace Lab3Ind1
             } while (success == false);
 
             Transport Vehicle = new Transport(Type, Mark, Year, Capacity, Power, Max);
-
 
             int decision = 0;
             int position = 0;
@@ -85,7 +78,6 @@ namespace Lab3Ind1
                         Console.WriteLine("Okay!\n");
 
                 } while (correct == false);
-
 
                 Console.Clear();
                 switch (decision)

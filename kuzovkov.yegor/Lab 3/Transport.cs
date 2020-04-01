@@ -16,8 +16,6 @@ namespace Lab3Ind1
         private uint   MaxSpeed;
         private int    CurrentSpeed = 0;
 
-
-
         //constructors
         public Transport(string transType, string transMark, uint year, uint transCapacity, uint transPower, uint transMax)
         {
@@ -44,9 +42,7 @@ namespace Lab3Ind1
         {
             Console.WriteLine("PEPEG!!!");
         }
-
-
-        
+    
         //properties
         public string type
         {
@@ -108,8 +104,6 @@ namespace Lab3Ind1
                     Console.WriteLine("Error. You can't speed up so much.");
             }
         }
-
-
 
         //Methods
         public void Beep()
