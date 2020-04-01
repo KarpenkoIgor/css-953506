@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace labr2._3
 {
     class Program
