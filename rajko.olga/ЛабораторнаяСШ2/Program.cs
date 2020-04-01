@@ -6,9 +6,7 @@ namespace ЛабораторнаяСШ1
     class Program
     {
         static void Main(string[] args)
-        {
-
-           
+        {         
             DateTime  date1= DateTime.Now;
             Console.WriteLine(date1.ToString());
             Console.Write(date1.ToLongDateString());
@@ -24,7 +22,6 @@ namespace ЛабораторнаяСШ1
                 Console.WriteLine("{0}:{1}", num, number);
                 number = 0;
             }
-
         }
     }
 }
