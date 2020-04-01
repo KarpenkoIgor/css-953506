@@ -2,38 +2,33 @@
 
 namespace Lab3Ind1
 {
-    //TODO: 
-    //1. Add indexers.
-    //2. Add methods involving speed and fuel changes.
-    //3. Make a menu in Program.cs involving initialization and moving of transport.
+    //TODO:
+    //1. Make a menu in Program.cs involving initialization and moving of transport. - only moving!!
 
     
     class Transport
     {
         //fields
+        private double Fuel = 0;
         private string Type;
         private string Mark;
         private uint   YearMade;
         private uint   Capacity;
-        private uint   Fuel = 0;
         private uint   Power;
-        private uint   Consumption;
         private uint   MaxSpeed;
-        private int    CurrentSpeed;
+        private int    CurrentSpeed = 0;
 
 
 
         //constructors
-        public Transport(string transType, string transMark, uint year, uint transCapacity, uint transPower, uint transConsumption, uint transMax, int transCurrent)
+        public Transport(string transType, string transMark, uint year, uint transCapacity, uint transPower, uint transMax)
         {
             Type = transType;
             Mark = transMark;
             YearMade = year;
             Capacity = transCapacity;
             Power = transPower;
-            Consumption = transConsumption;
             MaxSpeed = transMax;
-            CurrentSpeed = transCurrent;
         }
 
         public Transport()
@@ -42,9 +37,14 @@ namespace Lab3Ind1
             Mark = "NULL";
             YearMade = 0;
             Power = 0;
-            Consumption = 0;
             MaxSpeed = 0;
             CurrentSpeed = 0;
+        }
+
+        //destructor
+        ~Transport()
+        {
+            Console.WriteLine("PEPEG!!!");
         }
 
 
@@ -88,21 +88,9 @@ namespace Lab3Ind1
             set { Power = value; }
         }
 
-        public uint fuel
+        public double fuel
         {
             get { return Fuel; }
-        }
-
-        public uint consumption
-        {
-            get { return Consumption; }
-            set
-            {
-                if (value <= Capacity)
-                    Consumption = value;
-                else
-                    Console.WriteLine("Error. The transport's consumption is higher than it's capacity.");
-            }
         }
 
         public uint maxspeed
@@ -114,6 +102,13 @@ namespace Lab3Ind1
         public int currentspeed
         {
             get { return CurrentSpeed; }
+            set
+            {
+                if (CurrentSpeed + value < MaxSpeed)
+                    CurrentSpeed = value;
+                else
+                    Console.WriteLine("Error. You can't speed up so much.");
+            }
         }
 
 
@@ -122,6 +117,55 @@ namespace Lab3Ind1
         public void Beep()
         {
             Console.WriteLine("BEEP!\a");
+        }
+
+        public void Refuel(uint amount)
+        {
+            if (Fuel + amount <= Capacity)
+                Fuel += amount;
+            else
+                Console.WriteLine("Error. The amount of fuel you'd like to add is above the transport's capacity.");
+        }
+
+        public double Calculate(int position)
+        {
+            return Fuel / position * 100;
+        }
+
+        public int Move(int position)
+        {
+            int total = 0;
+            double cost = Calculate(position);
+            double temporary = Math.Abs(Fuel - cost);
+
+            if (Fuel < cost)
+            {
+                if (Fuel < temporary)
+                {
+                    Console.WriteLine("Error. You don't have enough fuel. You aren't able to move.");
+                    return 0;
+                }
+
+                while (Fuel > 0)
+                {
+                    Fuel -= temporary;
+                    total += CurrentSpeed;
+                }
+
+                Console.WriteLine($"Error. You don't have enough fuel. You'll be able to move only for: {total} units.");
+                return total;
+            }
+
+            else
+            {
+                while (cost > 0)
+                {
+                    cost -= temporary;
+                    total += CurrentSpeed;
+                }
+                return total;
+            }
+
         }
     }
 }
