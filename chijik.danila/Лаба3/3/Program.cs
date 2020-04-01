@@ -3,7 +3,6 @@ using static System.Console;
 
 namespace _3
 {
-
     class Vehicle
     {
         public string name ;
@@ -95,7 +94,6 @@ namespace _3
                 car.Info();
             }
             ReadKey();
-
         }
     }
 }
