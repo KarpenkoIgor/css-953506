@@ -4,7 +4,7 @@ namespace _2._00
 {
     class Program
     {
-        private static Random random;
+        private Random random;
         static void Main(string[] args)
         {
             bool exit = false;
