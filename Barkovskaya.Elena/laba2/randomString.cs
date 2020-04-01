@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Text;
-
 namespace labr2._2
 {
     class Program
     {
         static void Main(string[] args)
-
         {
             string Alphabet = "qwertyuiopasdfghjklzxcvbnm";
             Random rnd = new Random();
