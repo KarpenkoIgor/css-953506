@@ -3,8 +3,7 @@
 namespace ConsoleApp2
 {
     class Program
-    {
-       
+    {       
         static char[] game = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         static int player = 1;
         static int move;
@@ -13,8 +12,7 @@ namespace ConsoleApp2
        
         static void Main(string[] args)
         {
-           TicTacToe();
-                 
+           TicTacToe();                 
         }
 
         
@@ -74,7 +72,6 @@ namespace ConsoleApp2
                                 exit = true;
                             }
                         }
-
                      
                     } while (exit != true);
                     
@@ -87,8 +84,7 @@ namespace ConsoleApp2
                 else if (result == 0) Console.WriteLine("No one won");
                 else Console.WriteLine("Player{0} has won", (player % 2) + 1);
                 Console.WriteLine("\n");
-                
-
+               
             };
         }
 
