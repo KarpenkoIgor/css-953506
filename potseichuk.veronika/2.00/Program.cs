@@ -4,13 +4,12 @@ namespace _2._00
 {
     class Program
     {
-        private static Random random;
+        private Random random;
         static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
             {
-
                 Console.WriteLine("Choose the task from 1 to 3(for quit - 0):");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -27,8 +26,6 @@ namespace _2._00
                         Console.WriteLine(now.ToString("F"));
                         Console.WriteLine(now.ToString("G"));
                         Console.WriteLine("\nThe number of digits in the date entry:");
-
-
                         string nowDate = DateTime.Now.ToString();
                         int sum = 0;
                         for (char num = '0'; num <= '9'; num++)
@@ -51,15 +48,12 @@ namespace _2._00
                     case 2:
                         Console.Clear();
                         Console.WriteLine("Enter a string (in Russian):");
-                        string str;
-                        str = Convert.ToString(Console.ReadLine());
+                        string str = Convert.ToString(Console.ReadLine());
                         int n = str.Length, i;
                         for (i = 0; i < n; i++)
                             if (char.IsUpper(str[i]))
                                 if (str[i] > 'A' && str[i] < 'Z') continue;
                                 else Console.Write(str[i]);
-
-
                         Console.Write("\n\nPress any key to continue.");
                         Console.ReadKey();
                         Console.Clear();
@@ -70,10 +64,8 @@ namespace _2._00
                         string english = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv";
                         for (int j = 0; j < 30; j++)
                         {
-                            int rand = random.Next(0, english.Length);
-                           // Console.Write("{0}. ", j + 1);
+                            int rand = random.Next(0, english.Length);                           
                             Console.Write(english[rand]+ " ");
-                            //Console.WriteLine(" Стоит на позиции {0} ", rand);
                         }
                         Console.Write("\n\nPress any key to continue.");
                         Console.ReadKey();
@@ -92,10 +84,8 @@ namespace _2._00
                                 Console.WriteLine("Please press any key or '4'.....");
                                 Console.ReadKey();
                                 Console.Clear(); 
-                            }
-                        
+                            }                      
                         break;
-
                 }
             }
 

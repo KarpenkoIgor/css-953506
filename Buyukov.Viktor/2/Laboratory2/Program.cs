@@ -16,7 +16,6 @@ namespace Laboratory2
                 massiv[i] = start[i];
             }
 
-
              for (int i = 0; i < massiv.Length/2; i++)
              {
                  t = massiv[i];
@@ -59,9 +58,7 @@ namespace Laboratory2
             for (int i = 0; i < start.Length; i++)
             {
                 Console.Write(massiv[i]);
-
-            }
-
+           }
         }
     }
 }

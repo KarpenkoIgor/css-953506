@@ -5,16 +5,16 @@ namespace pudge
     class Human
     {
         //----------------Структура
-        protected struct FIO
+        private struct FIO
         {
             public string name, surname;
         }
 
         //----------------Поля
-        protected int age;
-        protected string _disease, _gender;
-        protected bool _ill, _isDead;
-        protected FIO fio;
+        private int age;
+        private string _disease, _gender;
+        private bool _ill, _isDead;
+        private FIO fio;
         public static int birth_year;
 
         //----------------Конструкторы

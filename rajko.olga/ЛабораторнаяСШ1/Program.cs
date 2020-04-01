@@ -2,15 +2,11 @@
 
 namespace ЛабораторнаяСШ1
 {
-
         class Program
      {
         static void Main(string[] args)
-        {
-           
+        {          
             double a, b, c, x3,x4 , D, t1, t2, x1, x2,i,z1,z3,z4,x,y,z2;
-       
-
             Console.WriteLine("Решим возвратное уравнение a * Math.Pow(x, 4) + b * Math.Pow(x, 3) + c * Math.Pow(x, 2) + b * x + a = 0 ");
             Console.Write("Введите a: ");
             a = Convert.ToDouble(Console.ReadLine());
@@ -36,7 +32,6 @@ namespace ЛабораторнаяСШ1
                 Console.Write(x1);
                 Console.Write(" / x2=");
                 Console.Write(x2);
-
             }
             else
             {
@@ -57,8 +52,7 @@ namespace ЛабораторнаяСШ1
                 Console.Write(x); 
                 Console.Write(" - ");
                 Console.Write(y); 
-                Console.Write("*i ");
-           
+                Console.Write("*i ");          
             }
             D = Math.Pow(t2, 2) - 4;
             if (D >= 0)
@@ -92,11 +86,9 @@ namespace ЛабораторнаяСШ1
                 Console.Write(x); 
                 Console.Write(" - ");
                 Console.Write(y); 
-                Console.WriteLine("*i ");
-            
+                Console.WriteLine("*i ");           
             }
-            Console.Write("i-мнимая еденица");
-           
+            Console.Write("i-мнимая еденица");     
         }
     }
 }

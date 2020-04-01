@@ -11,15 +11,12 @@ namespace Laboratory2._1
         static void Main(string[] args)
         {
             Console.WriteLine("Enter Interval Limits [a,b]:");
-
+            
             Console.Write("a=");
             a = Convert.ToInt32(Console.ReadLine());
             
-
             Console.Write("b=");
             b = Convert.ToInt32(Console.ReadLine());
-
-
 
             while (a <= b)
             {
@@ -31,12 +28,7 @@ namespace Laboratory2._1
                 }
                 a++;
             }
-
-            Console.WriteLine($"Stepen chisla={condition}");
-            
+            Console.WriteLine($"Stepen chisla={condition}");            
         }
-
-        
-
     }
 }
