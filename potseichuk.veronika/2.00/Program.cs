@@ -65,10 +65,8 @@ namespace _2._00
                         string english = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv";
                         for (int j = 0; j < 30; j++)
                         {
-                            int rand = random.Next(0, english.Length);
-                           // Console.Write("{0}. ", j + 1);
+                            int rand = random.Next(0, english.Length);                           
                             Console.Write(english[rand]+ " ");
-                            //Console.WriteLine(" Стоит на позиции {0} ", rand);
                         }
                         Console.Write("\n\nPress any key to continue.");
                         Console.ReadKey();
